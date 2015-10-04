@@ -1,0 +1,206 @@
+@import url('http://fonts.googleapis.com/css?family=Sanchez');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+html { overflow-y: hidden; }
+
+br { display: block; line-height: 1.25em; } 
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color:#000;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
+    line-height: 1;
+    padding-top: 55px;
+}
+
+h2{
+   float: left; 
+   border: 1px solid black;
+   margin-left: 20%;
+   display: inline-block;
+   font-size: 3.1em;
+   padding: 7px 12px;
+   font-family: 'Sanchez', 'Times New Roman', serif;
+   color: #999; 
+}
+
+/** page sections **/
+.sectContent {
+  display: block;
+  min-height: 700px;
+  padding: 20px 20px;
+}
+
+#homeHead{
+    margin-top: 55px;
+}
+
+#minTitle{
+    float: left; 
+    border: 1px solid black;
+    margin-left: 20%;    
+}
+ #container{
+    background-color: #f5f5f5;
+    border: solid 2px #c5c5c5;
+    clear: both;
+    padding: 1%;
+    padding-bottom: 1.1%;
+    float: left;
+    width: 60%;
+    margin-left:15%;
+ }
+ 
+ #p1{
+    clear: both;
+    float: right;
+    font-size: 1.5em;
+    width: 20%;
+    margin-top: 50px;
+    margin-right:2px;
+}
+
+#p2{
+    clear: both;
+    float: right;
+    font-size: 1.5em;
+    width: 20%;
+    margin-top: -85px;
+    margin-right:2px;
+}
+ 
+ #bubbleButtons, #minButtons, #maxButtons{
+    clear: both; 
+    float:left; 
+    margin-top: -50px;
+    margin-left:5px;
+    border: 1px solid black;
+    padding: 5px;
+ }
+#canvasBubble, #canvasMin, #canvasMax{    
+     clear: both;
+     float: left;
+     padding: 10px;
+     margin-top: -160px;
+     margin-left: 12%;
+     border: 1px solid black;
+ }
+ 
+ #sortBubbleCanvas, #searchMincanvas, #searchMaxcanvas{     
+    background-color: #f5f5f5;
+    border: solid 3px #6F8A00;
+ }
+ 
+ #bubbleText1, #bubbleText2, #maxText2, #maxText1, #text1,#text2{
+     font-size: 1.5em;
+ }
+ 
+ #description_text{
+ 	clear: both;
+ 	float: left;
+ 	margin-left: 20%;
+ }
+ 
+  #instructions, #form_position, #message, #form_para{
+     clear: both;
+     float: left;
+     margin-left: 100px;
+ }
+ 
+ #form_position, #message, #form_para{
+     width: 50%;
+ }
+ 
+ #instructions, #form_para, #message{
+     font-size: medium;
+ }
+ 
+ #instructions{
+     width: 60%;
+ }
+ 
+ #test_box{
+     background-color: #f5f5f5;
+     border: solid 2px #6F8A00;
+     clear: both;
+     padding: 1%;
+     padding-bottom: 1.1%;
+     float: left;
+     width: 60%;
+     margin-top: 20px;
+     margin-left:15%;
+     font-size: 1.25em;
+ }
+ 
+ .search_title{
+     font-size: 150%;
+ }
+ 
+#testP, #p_home{
+     clear: both;
+     float: left;
+     width: 60%;
+     margin-top: 50px;
+     margin-left: 20%;
+     font-size: 1.5em;
+ }
+/** navigation structure **/
+#topnav {
+  display: block;
+  position: fixed;
+  top: 0;
+  height: 55px;
+  width: 100%;
+  background: #000;
+  border-bottom: 2px solid #6F8A00;
+}
+
+#topnav ul  { padding-left: 80px; }
+
+#topnav ul li { 
+  display: block;
+  width: auto;
+}
+
+#topnav ul li a {
+  display: block;
+  float: left;
+  line-height: 55px;
+  margin-right: 10px;
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color:#999;
+  text-decoration: none;
+  border-radius: 3px;
+    -webkit-transition: background 0.3s linear 0s, color 0.3s linear 0s;
+    -moz-transition: background 0.3s linear 0s, color 0.3s linear 0s;
+    -ms-transition: background 0.3s linear 0s, color 0.3s linear 0s;
+    -o-transition: background 0.3s linear 0s, color 0.3s linear 0s;
+    transition: background 0.3s linear 0s, color 0.3s linear 0s;
+}
+
+#topnav ul li a:hover {
+    background: #6F8A00;
+    color:#FFF; 
+}
